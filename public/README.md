@@ -1,7 +1,7 @@
 # Public metrics data
 
 Only sanitized, reviewed aggregate data belongs here. Every JSON metrics document must
-conform to `schemas/public-metrics-v1.schema.json` and pass the repository validator.
+conform to the tooling repository's `schemas/public-metrics-v1.schema.json` and pass its validator.
 Every JSON file must also be explicitly listed in `publication-manifest.json`; otherwise
 publication fails closed.
 Estimated values should include `kind` and `method`; `static-cost-routing.json` is
