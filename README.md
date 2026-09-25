@@ -12,12 +12,12 @@ Schemas and validators live in
 The approved data is presented by
 [`sdeveng-metrics-dashboard`](https://github.com/simplexidev/sdeveng-metrics-dashboard).
 
-With the three metrics repositories checked out as siblings, validate the complete
-publication input with:
+The versioned dashboard interface is `public/publication-manifest.json` (schema `1.0`)
+plus its listed sanitized JSON artifacts. Validate with explicit repository paths:
 
 ```console
 dotnet run --project ../sdeveng-metrics-tooling/src/SdevEng.Metrics -- \
-  publish-pages ../sdeveng-metrics-dashboard public _site
+  publish-pages <dashboard-directory> public _site
 ```
 
 ## License
